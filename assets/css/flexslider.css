@@ -132,12 +132,12 @@ html[xmlns] .flexslider .slides {
   content: '\f002';
 }
 .flex-direction-nav .flex-prev {
-  background: url(../images/arrow-prev.png) no-repeat !important;
+  background: url(../img/arrow-prev.png) no-repeat !important;
   left: -50px;
   text-indent: -9999px;
 }
 .flex-direction-nav .flex-next {
-  background: url(../images/arrow-next.png) no-repeat;
+  background: url(../img/arrow-next.png) no-repeat;
   right: -50px;
   text-indent: -9999px;
 }

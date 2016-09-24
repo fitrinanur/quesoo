@@ -510,13 +510,14 @@
     <!--JS-->
 
     <script src="assets/js/jquery-2.1.1.js"  type="text/javascript"></script>
+    <script src="assets/js/jquery-ui.js"  type="text/javascript"></script>
     <script src="assets/js/jquery.flexslider.js" type="text/javascript"></script>
    <!-- <script src="assets/js/jquery.selectBox.min.js" type="text/javascript"></script>-->
     <script src="assets/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
     <script src="assets/js/counter.animation.js" type="text/javascript"></script>
-    <script src="assets/js/jquery.appear.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/jquery.appear.js" type="text/javascript"></script>
+    <script src="assets/js/custom.js" type="text/javascript"></script>
 
 
     <script>
