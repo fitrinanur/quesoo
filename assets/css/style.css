@@ -767,5 +767,6 @@ a.button-third:hover {
     padding-left: 8px;
 }
 .top ul > li .status {
-    color: gray;
+    color:red;
+
 }
