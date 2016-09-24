@@ -307,42 +307,42 @@
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="clearfix row">
-                                <li class="counter col-md-2 col-sm-3">
+                                <li class="counter col-md-2 col-sm-2">
                                     <div>
                                         <figure><img src="assets/img/place.png" alt=""></figure>
                                         <small>Collection</small>
                                         <span data-fact="5532">0000</span>
                                     </div>
                                 </li>
-                                <li class="counter col-md-2 col-sm-3">
+                                <li class="counter col-md-2 col-sm-2">
                                     <div>
                                         <figure><img src="assets/img/place.png" alt=""></figure>
                                         <small>Place</small>
                                         <span data-fact="2518">0000</span>
                                     </div>
                                 </li>
-                                <li class="counter col-md-2 col-sm-3">
+                                <li class="counter col-md-2 col-sm-2">
                                     <div>
                                         <figure><img src="assets/img/avatar1.png" alt=""></figure>
                                         <small>User</small>
                                         <span data-fact="1007">0000</span>
                                     </div>
                                 </li>
-                                <li class="counter col-md-2 col-sm-3">
+                                <li class="counter col-md-2 col-sm-2">
                                     <div>
                                         <figure><img src="assets/img/place.png" alt=""></figure>
                                         <small>Check-In</small>
                                         <span data-fact="2119">0000</span>
                                     </div>
                                 </li>
-                                <li class="counter col-md-2 col-sm-3">
+                                <li class="counter col-md-2 col-sm-2">
                                     <div>
                                         <figure><img src="assets/img/place.png" alt=""></figure>
                                         <small>Photo</small>
                                         <span data-fact="1020">000</span>
                                     </div>
                                 </li>
-                                <li class="counter col-md-2 col-sm-3">
+                                <li class="counter col-md-2 col-sm-2">
                                     <div>
                                         <figure><img src="assets/img/place.png" alt=""></figure>
                                         <small>Review</small>
@@ -511,6 +511,7 @@
 
     <script src="assets/js/jquery-2.1.1.js"  type="text/javascript"></script>
     <script src="assets/js/jquery.flexslider.js" type="text/javascript"></script>
+
    <!-- <script src="assets/js/jquery.selectBox.min.js" type="text/javascript"></script>-->
     <script src="assets/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>

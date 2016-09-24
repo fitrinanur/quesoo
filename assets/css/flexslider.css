@@ -132,12 +132,12 @@ html[xmlns] .flexslider .slides {
   content: '\f002';
 }
 .flex-direction-nav .flex-prev {
-  background: url(../images/arrow-prev.png) no-repeat !important;
+  background: url(../img/arrow-prev.png) no-repeat !important;
   left: -50px;
   text-indent: -9999px;
 }
 .flex-direction-nav .flex-next {
-  background: url(../images/arrow-next.png) no-repeat;
+  background: url(../img/arrow-next.png) no-repeat;
   right: -50px;
   text-indent: -9999px;
 }
@@ -198,7 +198,7 @@ html[xmlns] .flexslider .slides {
   zoom: 1;
   *display: inline;
 }
-.flex-control-paging li a {
+/*.flex-control-paging li a {
   width: 10px;
   height: 10px;
   display: block;
@@ -217,7 +217,7 @@ html[xmlns] .flexslider .slides {
 .flex-control-paging li a.flex-active {
   background: #f44336;
   cursor: default;
-}
+}*/
 .flex-control-thumbs {
   margin: 5px 0 0;
   position: static;
