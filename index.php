@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
     <link rel="stylesheet" href="assets/css/owl.theme.css" type="text/css">
     <link rel="stylesheet" href="assets/css/owl.transitions.css">
-    <link rel="stylesheet" href="assets/css/pace-minimal.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
  <!--   <link rel="stylesheet" href="assets/css/jquery.selectBox.css" type="text/css">-->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="shortcut icon" href="favicon.ico">
@@ -33,23 +34,9 @@
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="drop"><a href="index.php" class="active">Home</a>
-                                <ul class="drop-down">
-                                    <li><a href="index.php"> Home Default</a></li>
-                                    <li><a href="index.php"> Home Default</a></li>
-                                    <li><a href="index.php"> Home Default</a></li>
-                                    <li><a href="index.php"> Home Default</a></li>
-                                </ul>
-                            </li>
-                            <li class="drop"><a href="index.php" class="active">Features</a>
-                                <ul class="drop-down">
-                                    <li><a href="index.php"> Home Default</a></li>
-                                    <li><a href="index.php"> Home Default</a></li>
-                                    <li><a href="index.php"> Home Default</a></li>
-                                    <li><a href="index.php"> Home Default</a></li>
-                                </ul>
-                            </li>
-                            <li class="drop"><a href="index.php" class="active">Blog</a>
+                            <li class="drop"><a href="#collection" class="active">Collection</a></li>
+                            <li class="drop"><a href="#statistik" class="active">Statistik</a></li>
+                            <li class="drop"><a href="#locatione" class="active">Place</a>
                                 <ul class="drop-down">
                                     <li><a href="index.php"> Home Default</a></li>
                                     <li><a href="index.php"> Home Default</a></li>
@@ -64,7 +51,16 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="portfolio.html">Portfolio</a>
+                            <li><a href="#collection">Foods</a>
+                                <ul class="drop-down">
+                                    <li><a href="portfolio.html">3 Colums</a></li>
+                                    <li><a href="portfolio-4col.html">4 Colums</a></li>
+                                    <li><a href="portfolio-4col-vers2.html">4 Colums - vers2</a></li>
+                                    <li><a href="portfolio-5col.html">5 Colums</a></li>
+                                    <li><a href="single-project.html">Single Project</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#reviews">Reviews</a>
                                 <ul class="drop-down">
                                     <li><a href="portfolio.html">3 Colums</a></li>
                                     <li><a href="portfolio-4col.html">4 Colums</a></li>
@@ -138,27 +134,26 @@
 
         <!--Filter-->
         <div class="container search">
-
-            <div class="box-filter owl-backSlide-in ">
-                <img class="logo1" src="assets/img/logo1.jpg" alt="">
-            <div class="filter">
-                <p class="title-search"> Find The Best Restaurants, Cafe, and Bars in Yogyakarta </p>
-                <select class="location">
-                    <option>Location</option>
-                    <option>London</option>
-                    <option>Paris</option>
-                    <option>New York</option>
-                </select>
-                <input type="text" name="searchKeywords" class="search-form" placeholder="Search Keywords, Cuisine, Dish...">
-                <button type="button" class="btn"><i class="fa fa-search"></i>Search</button>
-            </div>
+            <div class="col-lg-8 col-lg-offset-2 owl-backSlide-in ">
+                <img class="logo1" src="assets/img/logo1.jpg" alt="" class="img-responsive">
+                <div class="filter">
+                    <p class="title-search"> Find The Best Restaurants, Cafe, and Bars in Yogyakarta </p>
+                       <select class="location form-control">
+                            <option>Location</option>
+                            <option>London</option>
+                            <option>Paris</option>
+                            <option>New York</option>
+                        </select>
+                    <input type="text" name="searchKeywords" class="form-control" placeholder="Search Keywords, Cuisine, Dish...">
+                    <button type="button" class="btn"><i class="fa fa-search"></i>Search</button>
+                </div>
             </div>
         </div>
         <!--End of Filter-->
 
         <!--Collection-->
         <div class="container">
-            <div class="collection">
+            <div id="collection">
              <div class="title-section">
                     <div class="row">
                         <h3>Collection</h3>
@@ -191,7 +186,7 @@
                         <div class="col-md-4 col-sm-6">
                             <div class="item">
                                 <div class="item-header clearfix">
-                                    <h3><a href="#">Top Restaurant This Week</a></h3>
+                                    <h3><a href="#">Top Cuisine</a></h3>
                                     <span class="favorite"><i class="fa fa-heart"></i>9</span>
                                 </div>
                                 <figure>
@@ -203,7 +198,7 @@
                                 </figure>
                                 <div class="item-detail">
                                     <div class="left">
-                                        <p>Find best restaurant to spent your quality meals</p>
+                                        <p>Top Cuisine of the weeks</p>
                                     </div>
                                 </div>
                             </div>
@@ -299,10 +294,12 @@
                         </div>
                     </div>
             </div>
+        </div>
 
 
-            <!-- statistik -->
-            <div class="facts_wrap animated">
+        <!-- statistik -->
+        <div class="facts_wrap animated">
+            <div id="statistik">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -353,66 +350,12 @@
                         </div>
                     </div>
                 </div>
-            </div><!--fact-wraps -->
-
-            <!--location -->
-            <div class="container">
-                    <div class="title-section">
-                        <div class="row">
-                            <h3>Location</h3>
-                            <p>Find Specific information by Location you choose</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="panel panel-default">
-                            <div class="location">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <p> <a href="#">Jogjakarta Utara (1890)</a></p>
-                                        <p> <a href="#">Jogjakarta Selatan (1890)</a></p>
-                                        <p> <a href="#">Jogjakarta Barat (19879)</a></p>
-                                        <p> <a href="#">Jogjakarta Timur (187678)</a></p>
-                                        <p> <a href="#">Bantul (187678)</a></p>
-                                        <p> <a href="#">Kulon Progo (187678)</a></p>
-                                        <p> <a href="#">Kaliurang (187678)</a></p>
-                                        <p> <a href="#">Malioboro (187678)</a></p>
-                                        <p> <a href="#">Sleman (187678)</a></p>
-                                        <p> <a href="#">Gamping (187678)</a></p>
-
-                                    </div>
-                                    <div class="col-md-4">
-                                        <p> <a href="#">Jogjakarta Utara (1890)</a></p>
-                                        <p> <a href="#">Jogjakarta Selatan (1890)</a></p>
-                                        <p> <a href="#">Jogjakarta Barat (19879)</a></p>
-                                        <p> <a href="#">Jogjakarta Timur (187678)</a></p>
-                                        <p> <a href="#">Bantul (187678)</a></p>
-                                        <p> <a href="#">Kulon Progo (187678)</a></p>
-                                        <p> <a href="#">Kaliurang (187678)</a></p>
-                                        <p> <a href="#">Malioboro (187678)</a></p>
-                                        <p> <a href="#">Sleman (187678)</a></p>
-                                        <p> <a href="#">Gamping (187678)</a></p>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <p> <a href="#">Jogjakarta Utara (1890)</a></p>
-                                        <p> <a href="#">Jogjakarta Selatan (1890)</a></p>
-                                        <p> <a href="#">Jogjakarta Barat (19879)</a></p>
-                                        <p> <a href="#">Jogjakarta Timur (187678)</a></p>
-                                        <p> <a href="#">Bantul (187678)</a></p>
-                                        <p> <a href="#">Kulon Progo (187678)</a></p>
-                                        <p> <a href="#">Kaliurang (187678)</a></p>
-                                        <p> <a href="#">Malioboro (187678)</a></p>
-                                        <p> <a href="#">Sleman (187678)</a></p>
-                                        <p> <a href="#">Gamping (187678)</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
             </div>
+        </div>
+        <!--statistik -->
 
-            <!-- Landmark -->
-            <div class="container">
+        <!-- Landmark -->
+        <div class="container">
                 <div class="title-section">
                     <div class="row">
                         <h3>Landmark</h3>
@@ -467,8 +410,69 @@
                 </div>
             </div>
 
-            <!-- Review Share -->
-            <div class="container">
+
+        <!--location -->
+        <div class="container">
+            <div id="location">
+                <div class="title-section">
+                    <div class="row">
+                        <h3>Location</h3>
+                        <p>Find Specific information by Location you choose</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="location">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <p> <a href="#">Jogjakarta Utara (1890)</a></p>
+                                    <p> <a href="#">Jogjakarta Selatan (1890)</a></p>
+                                    <p> <a href="#">Jogjakarta Barat (19879)</a></p>
+                                    <p> <a href="#">Jogjakarta Timur (187678)</a></p>
+                                    <p> <a href="#">Bantul (187678)</a></p>
+                                    <p> <a href="#">Kulon Progo (187678)</a></p>
+                                    <p> <a href="#">Kaliurang (187678)</a></p>
+                                    <p> <a href="#">Malioboro (187678)</a></p>
+                                    <p> <a href="#">Sleman (187678)</a></p>
+                                    <p> <a href="#">Gamping (187678)</a></p>
+
+                                </div>
+                                <div class="col-md-4">
+                                    <p> <a href="#">Jogjakarta Utara (1890)</a></p>
+                                    <p> <a href="#">Jogjakarta Selatan (1890)</a></p>
+                                    <p> <a href="#">Jogjakarta Barat (19879)</a></p>
+                                    <p> <a href="#">Jogjakarta Timur (187678)</a></p>
+                                    <p> <a href="#">Bantul (187678)</a></p>
+                                    <p> <a href="#">Kulon Progo (187678)</a></p>
+                                    <p> <a href="#">Kaliurang (187678)</a></p>
+                                    <p> <a href="#">Malioboro (187678)</a></p>
+                                    <p> <a href="#">Sleman (187678)</a></p>
+                                    <p> <a href="#">Gamping (187678)</a></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p> <a href="#">Jogjakarta Utara (1890)</a></p>
+                                    <p> <a href="#">Jogjakarta Selatan (1890)</a></p>
+                                    <p> <a href="#">Jogjakarta Barat (19879)</a></p>
+                                    <p> <a href="#">Jogjakarta Timur (187678)</a></p>
+                                    <p> <a href="#">Bantul (187678)</a></p>
+                                    <p> <a href="#">Kulon Progo (187678)</a></p>
+                                    <p> <a href="#">Kaliurang (187678)</a></p>
+                                    <p> <a href="#">Malioboro (187678)</a></p>
+                                    <p> <a href="#">Sleman (187678)</a></p>
+                                    <p> <a href="#">Gamping (187678)</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Review Share -->
+        <div class="container">
+            <div id="reviews">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="title-section">
@@ -477,12 +481,35 @@
                         </div>
                         <div class="top">
                             <ul class="list-group">
-                                <li class="list-group-item clearfix">
-                                    <img src="assets/img/avatar1.png" alt="">
-                                    <div class="about">
-                                        <div class="name">Andromeda Galaxy</div>
-                                        <div class="status"><i class="fa fa-circle"></i> Online</div>
-                                    </div>
+                                <li class="list-group-item about" >
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg" alt="" class="profile">
+                                    <!-- <a href="#" class="count-review"> 654 review</a>-->
+                                    <a href="#"><i class="fa fa-heart  fa-2x"></i></a>
+                                    <h3>Andromeda Galaxy <span>654 Review, 1594 Follower</span></h3>
+                                </li>
+                                <li class="list-group-item about" >
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample7.jpg" alt="" class="profile">
+                                    <!-- <a href="#" class="count-review"> 654 review</a>-->
+                                    <a href="#"><i class="fa fa-heart  fa-2x"></i></a>
+                                    <h3>Ashley Ash <span>653 Review, 1489 Follower</span></h3>
+                                </li>
+                                <li class="list-group-item about" >
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample8.jpg" alt="" class="profile">
+                                    <!-- <a href="#" class="count-review"> 654 review</a>-->
+                                    <a href="#"><i class="fa fa-heart  fa-2x"></i></a>
+                                    <h3>Ryan Cardeen <span>620 Review, 1470 Follower</span></h3>
+                                </li>
+                                <li class="list-group-item about" >
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample9.jpg" alt="" class="profile">
+                                    <!-- <a href="#" class="count-review"> 654 review</a>-->
+                                    <a href="#"><i class="fa fa-heart  fa-2x"></i></a>
+                                    <h3>Audrey <span>550 Review, 1320 Follower</span></h3>
+                                </li>
+                                <li class="list-group-item about" >
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="" class="profile">
+                                    <!-- <a href="#" class="count-review"> 654 review</a>-->
+                                    <a href="#"><i class="fa fa-heart  fa-2x"></i></a>
+                                    <h3>Alexis Proximus <span>400 Review, 900 Follower</span></h3>
                                 </li>
                             </ul>
                         </div>
@@ -492,15 +519,205 @@
                             <h3>Top Photographers</h3>
                             <p>The man behind the photo scene</p>
                         </div>
+                        <div class="top">
+                            <ul class="list-group">
+                                <li class="list-group-item about" >
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample1.jpg" alt="" class="profile">
+                                    <!-- <a href="#" class="count-review"> 654 review</a>-->
+                                    <a href="#"><i class="fa fa-heart  fa-2x"></i></a>
+                                    <h3>Kim Reya <span>1090 Review, 1894 Follower</span></h3>
+                                </li>
+                                <li class="list-group-item about" >
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample2.jpg" alt="" class="profile">
+                                    <!-- <a href="#" class="count-review"> 654 review</a>-->
+                                    <a href="#"><i class="fa fa-heart  fa-2x"></i></a>
+                                    <h3>Ambarm Sign <span>900 Review, 1789 Follower</span></h3>
+                                </li>
+                                <li class="list-group-item about" >
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg" alt="" class="profile">
+                                    <!-- <a href="#" class="count-review"> 654 review</a>-->
+                                    <a href="#"><i class="fa fa-heart  fa-2x"></i></a>
+                                    <h3>Margareth <span>892 Review, 1650 Follower</span></h3>
+                                </li>
+                                <li class="list-group-item about" >
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample4.jpg" alt="" class="profile">
+                                    <!-- <a href="#" class="count-review"> 654 review</a>-->
+                                    <a href="#"><i class="fa fa-heart  fa-2x"></i></a>
+                                    <h3>Roybeans Gelato <span>800 Review, 1200 Follower</span></h3>
+                                </li>
+                                <li class="list-group-item about" >
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg" alt="" class="profile">
+                                    <!-- <a href="#" class="count-review"> 654 review</a>-->
+                                    <a href="#"><i class="fa fa-heart  fa-2x"></i></a>
+                                    <h3>Andromeda Galaxy <span>654 Review, 1594 Follower</span></h3>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-md-4">
                         <div class="title-section">
                             <h3>Top Foodys Blogger</h3>
                             <p>Share your mood, share your food</p>
                         </div>
+                        <div class="top">
+                            <ul class="list-group">
+                                <li class="list-group-item about" >
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample2.jpg" alt="" class="profile">
+                                    <!-- <a href="#" class="count-review"> 654 review</a>-->
+                                    <a href="#"><i class="fa fa-heart  fa-2x"></i></a>
+                                    <h3>Ambarm Sign <span>900 Review, 1789 Follower</span></h3>
+                                </li>
+                                <li class="list-group-item about" >
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg" alt="" class="profile">
+                                    <!-- <a href="#" class="count-review"> 654 review</a>-->
+                                    <a href="#"><i class="fa fa-heart  fa-2x"></i></a>
+                                    <h3>Andromeda Galaxy <span>654 Review, 1594 Follower</span></h3>
+                                </li>
+                                <li class="list-group-item about" >
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample8.jpg" alt="" class="profile">
+                                    <!-- <a href="#" class="count-review"> 654 review</a>-->
+                                    <a href="#"><i class="fa fa-heart  fa-2x"></i></a>
+                                    <h3>Ryan Cardeen <span>620 Review, 1470 Follower</span></h3>
+                                </li>
+                                <li class="list-group-item about" >
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample7.jpg" alt="" class="profile">
+                                    <!-- <a href="#" class="count-review"> 654 review</a>-->
+                                    <a href="#"><i class="fa fa-heart  fa-2x"></i></a>
+                                    <h3>Ashley Ash <span>653 Review, 1489 Follower</span></h3>
+                                </li>
+                                <li class="list-group-item about" >
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg" alt="" class="profile">
+                                    <!-- <a href="#" class="count-review"> 654 review</a>-->
+                                    <a href="#"><i class="fa fa-heart  fa-2x"></i></a>
+                                    <h3>Margareth <span>892 Review, 1650 Follower</span></h3>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 copy-right">
+                        <p><img src="assets/img/logo1.jpg" alt="Logo" class="img-responsive"> &copy; Quesoo - App for Foodies</p>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="subscribe">
+                            <h4>Subscribe</h4>
+                            <p>Subscribe us to update information. <br> Enter your email and We will touch down soon.</p>
+                            <form class="subscribe-form">
+                                <input type="text" id="e-mail" name="e-mail" placeholder="Email Address"/>
+                                <input type="submit" id="submit" value="submit"/>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="social-icon">
+                            <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
+                            <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
+                            <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
+                            <a href="#"><i class="fa fa-rss fa-3x"></i></a>
+                            <a href="#"><i class="fa fa-google-plus-square fa-3x"></i></a>
+                            <a href="#"><i class="fa fa-pinterest fa-3x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-bottom footer-line">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Carrier</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Contact</a></li>
+                       <!-- <li><select name="" id="" class="form-control laguange">
+                            <option value="">Indonesia</option>
+                            <option value="">Indonesia</option>
+                        </select>
+                        </li>-->
+                    </ul>
+                </div>
+                <div class="footer-line"></div>
+                <div class="bussiness">
+                    <div class="row">
+                        <h4>Bussiness</h4>
+                        <div class="col-md-6">
+                            <div class="col-sm-4 list-bussiness">
+                                <ul>
+                                    <li><a href="">Add Restaurant</a></li>
+                                    <li><a href="">Bussiness App</a></li>
+                                    <li><a href="">Advertise</a></li>
+                                    <li><a href="">Booking</a></li>
+                                </ul>
+                             </div>
+                            <div class="col-sm-4 list-bussiness">
+                                <ul>
+                                    <li><a href="">Add Restaurant</a></li>
+                                    <li><a href="">Bussiness App</a></li>
+                                    <li><a href="">Advertise</a></li>
+                                    <li><a href="">Booking</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 list-bussiness">
+                                <ul>
+                                    <li><a href="">Add Restaurant</a></li>
+                                    <li><a href="">Bussiness App</a></li>
+                                    <li><a href="">Advertise</a></li>
+                                    <li><a href="">Booking</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-sm-4 list-bussiness">
+                                <ul>
+                                    <li><a href="">Solo</a></li>
+                                    <li><a href="">Jakarta</a></li>
+                                    <li><a href="">Jogjakarta</a></li>
+                                    <li><a href="">Palembang</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 list-bussiness">
+                                <ul>
+                                    <li><a href="">Jogjakarta</a></li>
+                                    <li><a href="">Jakarta</a></li>
+                                    <li><a href="">Palembang</a></li>
+                                    <li><a href="">Solo</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 list-bussiness">
+                                <ul>
+                                    <li><a href="">Jogjakarta</a></li>
+                                    <li><a href="">Solo</a></li>
+                                    <li><a href="">Jakarta</a></li>
+                                    <li><a href="">Palembang</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <!-- <div class="nav-bottom footer-line">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Carrier</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <!-- <li><select name="" id="" class="form-control laguange">
+                             <option value="">Indonesia</option>
+                             <option value="">Indonesia</option>
+                         </select>
+                         </li>-->
+                    <!--</ul>
+                </div>-->
+               <!-- <div class="footer-line"></div>-->
+                </div>
+            </div>
+        </footer>
+
 
 
         </div><!-- container pertama -->
@@ -514,6 +731,8 @@
     <script src="assets/js/jquery.flexslider.js" type="text/javascript"></script>
 
    <!-- <script src="assets/js/jquery.selectBox.min.js" type="text/javascript"></script>-->
+   <!-- <script src="assets/js/typeahead.bundle.js"></script>
+        <script src="assets/js/prefetch.js"></script>-->
     <script src="assets/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
     <script src="assets/js/counter.animation.js" type="text/javascript"></script>
@@ -542,6 +761,14 @@
             });
 
         });
+    </script>
+    <script>
+        $(".hover").mouseleave(
+            function () {
+                $(this).removeClass("hover");
+            }
+        );
+
     </script>
 </body>
 </html>
